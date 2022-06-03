@@ -15,14 +15,19 @@ public class Program
 		
 		operate.Add(4, 9);
 		operate.Add(11, 51);
+		
 		operate.Subtract(9, 4);
 		operate.Subtract(48, 19);
+		
 		operate.Examin(7, 4);
 		operate.Examin(91, 52);
 		operate.Examin(4, 5);
 		operate.Examin(12, 37);
 		operate.Examin(5, 5);
 		operate.Examin(62, 62);
+		
+		operate.IDCheack("John117");
+		operate.IDCheack("Jacob Keys");
 		
 		status.currentState = Status.States.Solid;
 		status.CheckState();
