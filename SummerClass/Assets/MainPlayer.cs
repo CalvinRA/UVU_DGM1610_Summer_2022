@@ -4,6 +4,16 @@ using UnityEngine;
 
 public class MainPlayer : MonoBehaviour
 {
+    void Awake ()
+    {
+        Debug.Log("Awake called.")
+    }
+
+    void Start ()
+    {
+        Debug.Log("Start called.")
+    }
+
     public string myName:
 
     // Start is called before the first frame update
