@@ -9,10 +9,7 @@ public class UpdateAndFixedUpdate : MonoBehaviour
         Debug.Log("FixedUpdate timen :" + Time.deltaTime);
     }
 
-    void Update ()
-    {
-        Debug.Log("Update time :" + Time.deltaTime);
-    }
+   
 
     // Start is called before the first frame update
     void Start()
@@ -21,8 +18,8 @@ public class UpdateAndFixedUpdate : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+   void Update ()
     {
-        
+        Debug.Log("Update time :" + Time.deltaTime);
     }
 }

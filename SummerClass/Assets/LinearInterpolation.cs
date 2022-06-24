@@ -9,19 +9,19 @@ public class LinearInterpolation : MonoBehaviour
     Vector3 from = new Vector3 (1f, 2f, 3f);
     Vector3 to = new Vector3 (5f, 6f, 7f);
 
-    // Here result = (4, 5, 6)
-    Vector3 result = Vector3.Lerp (from, to, .75f);
+    
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        // Here result = (4, 5, 6)
+        Vector3 resultV = Vector3.Lerp (from, to, .75f);
     }
 
     // Update is called once per frame
     void Update()
     {
-        light.intensity = Mathf.Lerp(light.intensity, 8f, 0.5f);
-        light.intensity = Mathf.Lerp(light.intensity, 8f, 0.5f * Time.deltaTime);
+        GetComponent<Light>().intensity = Mathf.Lerp(GetComponent<Light>().intensity, 8f, 0.5f);
+        GetComponent<Light>().intensity = Mathf.Lerp(GetComponent<Light>().intensity, 8f, 0.5f * Time.deltaTime);
     }
 }

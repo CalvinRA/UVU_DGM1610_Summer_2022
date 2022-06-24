@@ -3,23 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class MainPlayer : MonoBehaviour
-{
+{   
+    public string myName;
+
     void Awake ()
     {
-        Debug.Log("Awake called.")
+        Debug.Log("Awake called.");
     }
 
     void Start ()
     {
-        Debug.Log("Start called.")
-    }
-
-    public string myName:
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        Debug.Log("I am alive and my name is " + myName")
+        Debug.Log("Start called.");
+        Debug.Log("I am alive and my name is " + myName);
     }
 
     // Update is called once per frame

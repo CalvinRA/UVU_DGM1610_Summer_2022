@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MouseClick : MonoBehaviour
 {
-    private Rigidboody rb;
+    private Rigidbody rb;
 
     // Start is called before the first frame update
     void Start()
@@ -14,7 +14,7 @@ public class MouseClick : MonoBehaviour
 
     private void Awake()
     {
-        rb = GetComponent<Rigidboody>();
+        rb = GetComponent<Rigidbody>();
     }
 
     void OnMouseDown()

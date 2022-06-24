@@ -15,7 +15,7 @@ public class ExampleBehaviourScript : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.R))
         {
-            GetComponent<Renderer> ().material.color = Color.Red;
+            GetComponent<Renderer> ().material.color = Color.red;
         }
         if (Input.GetKeyDown(KeyCode.G))
         {

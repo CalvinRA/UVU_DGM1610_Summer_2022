@@ -15,9 +15,9 @@ public class EnableComponents : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyUp(KeyCode.space))
+        if(Input.GetKeyUp(KeyCode.Space))
         {
-            myLight.enabaled = !myLight.enabaled;
+            myLight.enabled = !myLight.enabled;
         }
     }
 }

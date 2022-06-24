@@ -11,7 +11,7 @@ public class DoWhileLoop : MonoBehaviour
 
         do
         {
-            pring ("Hello World");
+            print ("Hello World");
 
         }while(shouldContinue == true);
     }

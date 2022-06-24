@@ -23,27 +23,27 @@ public class IfStatements : MonoBehaviour
         coffeeTemperature -= Time.deltaTime * 5f;
     }
     
-    void TemperatureTest ()
+    void TemperatureTest()
     {
         // If the coffee's temperature is greater than the hottest drinking temperature...
         if(coffeeTemperature > hotLimitTemperature)
         {
             // ... do this.
-            print("Coffee is too hot.")
+            print("Coffee is too hot.");
         }
 
         // If it isn't, but the coffee tempurature is less than the coldest dringking temperature...
-        esle if(coffeeTemperature < coldLimitTemperature)
+        else if(coffeeTemperature < coldLimitTemperature)
         {
             // ... do this.
-            print("Coffee is too cold.")
+            print("Coffee is too cold.");
         }
 
         // If it is neither of those than...
-        esle
+        else
         {
             // ... do this.
-            print("Coffee is just right.")
+            print("Coffee is just right.");
         }
     }
 }

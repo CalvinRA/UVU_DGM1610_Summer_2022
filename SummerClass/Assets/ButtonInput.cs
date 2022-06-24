@@ -49,6 +49,6 @@ public class ButtonInput : MonoBehaviour
 
         boolDisplay1.text = " " + down;
         boolDisplay2.text = " " + held;
-        boolDisplay3.text + " " + held;
+        boolDisplay3.text = " " + held;
     }
 }

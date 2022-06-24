@@ -22,7 +22,7 @@ public class VectorExampleClass : MonoBehaviour
 
             if (Vector3.Dot(forward, toOther) < 0)
             {
-                print("The other transform is behind me!")
+                print("The other transform is behind me!");
             }
         }
     }

@@ -11,7 +11,7 @@ public class ForLoop : MonoBehaviour
     {
         for(int i = 0; i < numEnemies; i++)
         {
-            Debug.Log("Creating enemy numbers" i++);
+            Debug.Log("Creating enemy numbers" + i);
         }
     }
 
