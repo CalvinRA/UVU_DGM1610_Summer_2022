@@ -1,0 +1,126 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3353175757410406453
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3102444749423773203}
+  - component: {fileID: 50129914745378687}
+  - component: {fileID: 2667164268232511327}
+  m_Layer: 0
+  m_Name: BoltContainer
+  m_TagString: Untagged
+  m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3102444749423773203
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3353175757410406453}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 9084114385324696429}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &50129914745378687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3353175757410406453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18b3fd462d1ec974c99420c2a0524b9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 75
+--- !u!114 &2667164268232511327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3353175757410406453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c598b18b7c6b6894993b06391347ada9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  topBounds: 30
+  lowerBounds: -16
+--- !u!1001 &1719177902524422404
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3102444749423773203}
+    m_Modifications:
+    - target: {fileID: 7623185517674248809, guid: cae17e7e60a8a7045a90d91512c86605, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7623185517674248809, guid: cae17e7e60a8a7045a90d91512c86605, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7623185517674248809, guid: cae17e7e60a8a7045a90d91512c86605, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7623185517674248809, guid: cae17e7e60a8a7045a90d91512c86605, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7623185517674248809, guid: cae17e7e60a8a7045a90d91512c86605, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7623185517674248809, guid: cae17e7e60a8a7045a90d91512c86605, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7623185517674248809, guid: cae17e7e60a8a7045a90d91512c86605, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7623185517674248809, guid: cae17e7e60a8a7045a90d91512c86605, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7623185517674248809, guid: cae17e7e60a8a7045a90d91512c86605, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 7623185517674248809, guid: cae17e7e60a8a7045a90d91512c86605, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7623185517674248809, guid: cae17e7e60a8a7045a90d91512c86605, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8357174842188858529, guid: cae17e7e60a8a7045a90d91512c86605, type: 3}
+      propertyPath: m_Name
+      value: LaserBolt
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: -5722544815479177855, guid: cae17e7e60a8a7045a90d91512c86605, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: cae17e7e60a8a7045a90d91512c86605, type: 3}
+--- !u!4 &9084114385324696429 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7623185517674248809, guid: cae17e7e60a8a7045a90d91512c86605, type: 3}
+  m_PrefabInstance: {fileID: 1719177902524422404}
+  m_PrefabAsset: {fileID: 0}
