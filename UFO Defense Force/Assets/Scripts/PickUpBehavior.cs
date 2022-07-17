@@ -9,18 +9,19 @@ public class PickUpBehavior : MonoBehaviour
     public float spawnTime;
     public float spawnDelay;
 
-    public void Start()
+    private float spawnRangeX = 20.0f;
+    private float spawnPosZ = 20.0f;
+
+    void Start()
     {
-        InvokeRepeating("SpawnObject", spawnTime, spawnDelay);
+        InvokeRepeating("SpawnRandomPowerUp", spawnTime, spawnDelay);
     }
 
     // Update is called once per frame
-    public void SpawnObject()
+    void SpawnRandomPowerUp()
     {
-        Instantiate(pickUp, transform.position, transform.rotation);
-        if(stopSpawn)
-        {
-            CancelInvoke("SpawnObject");
-        }
+        Vector3 spawnPos = new Vector3(Random.Range(-spawnRangeX, spawnRangeX), 0, spawnPosZ);
+
+        Instantiate(pickUp, spawnPos, pickUp.transform.rotation); //Spawns pickUp from array at a random location on the x axis
     }
 }
