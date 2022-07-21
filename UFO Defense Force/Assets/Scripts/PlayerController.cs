@@ -12,6 +12,12 @@ public class PlayerController : MonoBehaviour
     public Transform blaster;
     public GameObject laserBolt;
 
+    public GameManager gameManager;
+
+    void Start()
+    {
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+    }
 
     // Update is called once per frame
     void Update()
@@ -35,7 +41,7 @@ public class PlayerController : MonoBehaviour
         }
 
         // If spacebar is pressed, Create laserBolt at the blater transform position maintaining the objects rotation
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && gameManager.isGameOver == false)
         {
             Instantiate(laserBolt, blaster.transform.position, laserBolt.transform.rotation);
         }
