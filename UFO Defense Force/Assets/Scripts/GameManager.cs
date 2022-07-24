@@ -5,7 +5,9 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public bool isGameOver;
+    public AudioClip loseSound;
     private GameObject gameOverText;
+    private AudioSource loseAudio;
 
     void Awake()
     {
@@ -17,6 +19,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         gameOverText = GameObject.Find("GameOverText");
+        loseAudio = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -35,5 +38,6 @@ public class GameManager : MonoBehaviour
     {
         gameOverText.gameObject.SetActive(true);
         Time.timeScale = 0;
+        loseAudio.PlayOneShot(loseSound, 1.0f);
     }
 }
